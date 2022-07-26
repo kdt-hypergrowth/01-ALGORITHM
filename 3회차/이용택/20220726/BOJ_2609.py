@@ -3,8 +3,8 @@
 * 접근
     * 두 수의 곱 / gcd => lcm
 '''
-# 시간초과
-# 최대공약수 (GCD)
+#시간초과
+# # 최대공약수 (GCD)
 # for i in range(min(a, b), 0, -1):
 #     if a % i == 0 and b % i == 0:
 #         GCD = i

@@ -20,6 +20,3 @@ for i in range(n - 1):
 result.append(uphill)  # 마지막 순서의 처리
 
 print(max(result))        
-
-
-    
