@@ -3,25 +3,24 @@ import sys
 
 sys.stdin = open("3회차/임선주/20220725/3_OX퀴즈.txt")
 
-t = int(input())
-answer = str(input())
-answer1 = list(answer)
-cnt = 0
-result = 0
-# print(len(answer))
-# print(answer1[0])
-for test_case in range(len(answer)+1):
-    if answer1[test_case] == 'O':
-        cnt += 1
-        # print(cnt)
-        if cnt != 0:
-            result += cnt
-            print(result)
-        # print(result)
-    else:
-        cnt = 0
-# print(result)
+T = int(input())
+O = 'O'
+X = 'X'
 
+for t in range(T):
+    ox = input()
+    count_o = 0
+    sum_ = 0
+
+    for answer in ox:
+        if answer == O:
+            count_o += 1
+            sum_ += count_o
+        elif answer == X:
+            count_o = 0
+            
+    print(sum_)
+    
 
 
 
