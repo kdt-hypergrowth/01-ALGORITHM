@@ -2,3 +2,5 @@
 import sys
 
 sys.stdin = open("5_분해합.txt")
+
+N = int(input())
