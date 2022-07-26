@@ -1,4 +1,4 @@
-# https://www.acmicpc.net/problem/8958
+# 8958 OX퀴즈 B2
 import sys
 
 sys.stdin = open("3_OX퀴즈.txt")
