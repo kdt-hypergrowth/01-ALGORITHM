@@ -3,7 +3,7 @@
 
 # sys.stdin = open("3_나는요리사다.txt")
 
-max_ = 0
+max_ = 0 # max값을 알아내기 위한 변수
 
 for i in range(1, 6):
     list_i = list(map(int, input().split())) # 5명의 평가 점수 입력
