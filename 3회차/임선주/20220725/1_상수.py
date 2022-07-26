@@ -24,6 +24,6 @@ b1 = int(b[::-1])
 if a1 > b1:
     print(a1, type(a1))
 else:
-    print(b1)
+    print(b1, type(b1))
 
 print(a1) if a1 > b1 else print(b1)
