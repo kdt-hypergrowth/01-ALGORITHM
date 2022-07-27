@@ -4,10 +4,13 @@ import sys
 sys.stdin = open("BOJ_2231_input.txt")
 
 N = int(input())
-print(N, type(N))
-M = list(str(N))
-print(M, type(M))
-sum_numbers = 0
-for number in M:
-    int(number)
-    print(number)
+result = 0
+
+for i in range(1, N + 1):
+    a = list(map(int, str(i)))
+    s = i + sum(a)
+    if(s == N):
+        result = i
+        break
+
+print(result)
