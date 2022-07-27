@@ -6,7 +6,7 @@
 
 T = int(input())                                # 길의 시점과 종점을 받는다
 numbers = list(map(int,input().split()))        # 높낮이를 리스트로 받는다
-temp = 0
+temp = 0                #누적값을 저장할 변수
 a = []
 
 for i in range(1,T):                            
@@ -19,4 +19,5 @@ for i in range(1,T):
         temp = 0
 
 print(max(a))                   # 리스트에 추가된 temp 값 중 가장 큰 값을 출력한다.
+
 
