@@ -8,7 +8,7 @@ for i in range(people_number):
     x, y = map(int, input().split())
     people_list.append((x, y))
 
-    
+print(people_list)
 
 for j in people_list:
     rank = 1
