@@ -9,8 +9,13 @@
 # 태영이가 만들 수 있는 SASA 모형 개수의 최댓값을 출력한다.
 # 2
 
+# 조건문
 S, A = map(int, input().split())
 if S // 2 <= A // 2:
     print(S // 2)
 else:
     print(A // 2)
+
+# min 함수
+S, A = map(int, input().split())
+print(min(S//2, A//2))
