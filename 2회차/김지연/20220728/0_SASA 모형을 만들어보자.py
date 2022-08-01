@@ -30,6 +30,4 @@
 
 # print(cnt)
 
-# # 시간 초과 , 틀림
-
 print(min(map(int, input().split())) // 2)
