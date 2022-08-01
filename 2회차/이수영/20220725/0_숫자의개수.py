@@ -10,6 +10,7 @@ num = [0] * 10
 digits = str(multiple)
 for idx in range(len(digits)):
     num[int(digits[idx])] += 1
+print(num)
 j = 0
 for j in range(len(num)):
     print(num[j])
