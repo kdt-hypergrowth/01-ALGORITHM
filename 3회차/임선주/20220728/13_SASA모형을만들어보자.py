@@ -19,3 +19,10 @@ if number_s > number_a:
     print(number_a)
 else:
     print(number_s)
+
+# min()로 할수도 있다!
+s, a = map(int, input().split())
+print(min(s//2, a//2))
+
+# 한 줄로 끝내기
+print(min(map(int, input().split())) // 2)
