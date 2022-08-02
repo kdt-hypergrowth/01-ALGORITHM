@@ -1,6 +1,7 @@
 import sys
 
 sys.stdin = open("자료구조최고_input.txt", "r") 
+input = sys.stdin.readline
 
 N, M = map(int, input().split())
 chk = True
