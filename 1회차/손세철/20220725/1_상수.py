@@ -15,3 +15,4 @@ if A > B:
 else : 
     print(B)
 # A가 더 크면 A출력, 아닐 시 B를 출력
+

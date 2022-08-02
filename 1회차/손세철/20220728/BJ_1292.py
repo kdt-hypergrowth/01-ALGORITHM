@@ -5,3 +5,5 @@ for i in range(1, 46):
       suyeol.append(i)
 
 print(sum(suyeol[A-1:B]))
+
+#--------------------------
