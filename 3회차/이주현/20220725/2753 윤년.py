@@ -1,11 +1,2 @@
 #https://www.acmicpc.net/problem/2753
 
-Year = int(input())
-
-if Year % 4 == 0:
-    if Year % 100 != 0 or Year % 400 == 0:
-        print('1')
-   
-else:
-    print("0")
-
