@@ -1,17 +1,14 @@
-import sys
 import heapq
+import sys
 
-n = int(input())
+N = int(sys.stdin.readline())
 heap = []
-
-for _ in range(n) : 
-    #numbers = [1,-1,0,0,0,1,1,-1,-1,2,-2,0,0,0,0,0,0,0]
-    numbers = int(sys.stdin.readline())
-
-    if numbers != 0 :
-        heapq.heappush(heap, abs(numbers), numbers)
-    else : 
-        if len(heap) == 0 : 
+for _ in range(N):
+    x = int(sys.stdin.readline())
+    if x == 0:
+        if heap:
+            print(heapq.heappop(heap)[1])
+        else:
             print(0)
-        else : 
-            print(heapq.heappop(heap[1]))
+    else:
+        heapq.heappush(heap, (abs(x), x))
