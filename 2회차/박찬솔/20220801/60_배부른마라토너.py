@@ -1,6 +1,6 @@
 import sys
 sys.stdin = open('60_배부른마라토너.txt')
-
+input = sys.stdin.readline
 n = int(input())
 
 person = dict() # 참가한 사람들의 dict
