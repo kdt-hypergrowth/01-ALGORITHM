@@ -18,5 +18,5 @@ for i in range(N) :
             print(heapq.heappop(heap)[1])  
 # heappop 메서드를 이용해 가장 앞에있는 튜플을 제거하며 그 1번째 인덱스, 즉 절댓값을 하기 전의 값을 출력한다.
     else :
-        heapq.heappush(heap, (abs(x),x)) 
+        heapq.heappush(heap, (abs(x),x))
 # (x의 절댓값, x) 순으로 푸쉬하면 절댓값 크기순, x크기순의 오름차순으로 정렬된다.

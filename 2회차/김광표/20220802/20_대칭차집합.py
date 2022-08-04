@@ -10,4 +10,4 @@ B = set(map(int, input().split()))
 # print(A-B)
 # print(B-A)
 
-print(len(A^B)) # 두 세트형을 ^로 연산하면 대칭 차집합이 구해진다.
+print(len(A-B)+len(B-A)) # 두 세트형을 ^로 연산하면 대칭 차집합이 구해진다.
