@@ -1,22 +1,28 @@
 '''
 Q. 박스
-* 아래로 움직임 가능
--> 아래에서 부터 위로 탐색
--> 묶어서 내려가기
-'''
-import sys
-input = sys.stdin.readline
 
-for i in range(int(input())):
+'''
+
+T = int(input())
+
+for _ in range(T):
     m, n = map(int, input().split())
+
     case = [list(map(int, input().split())) for _ in range(m)]
-    ans = 0  
-    
-    for j in range(n):
+
+    # 전치 행렬 new_case
+    new_case = [[0 for _ in range(m)] for _ in range(n)]
+    for i in range(m):  # 5
+        for j in range(n):  # 4
+            new_case[j][i] = case[i][j]
+             
+    ans = 0
+    for i in range(n):
         cnt = 0
-        for k in range(m):
-            if case[k][j]:
-                cnt += 1 
+        for j in range(m):
+            if new_case[i][j] == 1:
+                cnt += 1
             else:
-                ans += cnt  
+                ans += cnt
+    
     print(ans)
