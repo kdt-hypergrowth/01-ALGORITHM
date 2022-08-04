@@ -6,7 +6,6 @@ input = sys.stdin.readline
 
 N = int(input())
 list_ = []
-absolute_list_ = []
 heap = []
 heapq.heapify(heap)
 
