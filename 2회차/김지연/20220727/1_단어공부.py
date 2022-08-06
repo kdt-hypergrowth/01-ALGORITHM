@@ -1,22 +1,17 @@
-# https://www.acmicpc.net/problem/1157
-# import sys  
+import sys  
 
-# sys.stdin = open("1_단어공부.txt")
+sys.stdin = open("1_단어공부.txt")
 
-str = input()
-str_upper = list(str.upper()) # 입력받은 문자열을 모두 대문자로 변경
-list_ = []
-cnt = 1
+words = input().upper()
+list_ = list(set(words))
+cnt = []
 
-for i in range(len(str_upper)):
-    if str_upper[i] not in list_: 
-        list_.append(str_upper[i])
-        cnt = 1
-    else:
-        cnt += 1
-        tmp = cnt
-        
-if tmp == cnt:
-            print('?')
+for i in range(len(list_)):
+    cnt.append(words.count(list_[i]))
+
+max_ = max(cnt)
+
+if cnt.count(max_) != 1:
+    print('?')
 else:
-    print(list_)
+    print(list_[cnt.index(max_)])

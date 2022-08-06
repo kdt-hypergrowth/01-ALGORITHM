@@ -1,7 +1,6 @@
-# https://www.acmicpc.net/problem/2941
-# import sys  
+import sys  
 
-# sys.stdin = open("3_슈퍼마리오.txt")
+sys.stdin = open("3_슈퍼마리오.txt")
 
 sum_ = 0
 list_ = []

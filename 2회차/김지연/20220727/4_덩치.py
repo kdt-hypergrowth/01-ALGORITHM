@@ -1,7 +1,6 @@
-# https://www.acmicpc.net/problem/7568
-# import sys  
+import sys  
 
-# sys.stdin = open("4_덩치.txt")
+sys.stdin = open("4_덩치.txt")
 
 T = int(input())
 list_ = []
