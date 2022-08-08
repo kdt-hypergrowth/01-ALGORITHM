@@ -1,12 +1,16 @@
 # https://www.acmicpc.net/problem/9455
 
-chess = [1,1,2,2,2,8]
+matrix = [
+    [1,2,3],
+    [4,5,6],
+    [7,8,9]
+]
 
-dong = list(map(int,input().split()))
+n = 3
 
-for i in range(6):
-    print(chess[i]-dong[i],end = ' ')
+rotated_matrix = [[0] * n for _ in range(n)]
 
-
-
-
+for i in range(n):
+    for j in range(n):
+        rotated_matrix[i][j] = matrix[n-j-1][i]
+        print(rotated_matrix[i][j],end = '  ')
