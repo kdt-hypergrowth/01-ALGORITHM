@@ -19,8 +19,7 @@ result = []
 for i in range(n):
     list_ = ['.'] * n
     result.append(list_)
-pprint(result)
-pprint(open_bord)
+
 game_bord = list(game_bord)
 open_bord = list(open_bord)
 find_boom = False
