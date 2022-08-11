@@ -19,7 +19,7 @@ def dfs(u) :
     visit[u] = 1 # u번째 정점에 방문
     for i in graph[u] : # u번째 정점과 연결된 정점들을 모두 방문
         if visit[i] == 0 : # 방문 할 정점이 방문하지 않은 정점일시
-            dfs(i)
+            dfs(i) # 해당 지점에서 dfs 실행
 connected = 0
 for i in range(1, N+1) :
     if visit[i] == 0 :   
